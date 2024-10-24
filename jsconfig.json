@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@assets": ["assets"],
+      "@utils": ["utils"],
+      "@constants": ["constants"],
+      "@components": ["components"],
+      "@typography": ["typography"],
+      "@ui": ["common/ui"],
+      "@svg": ["common/svg"],
+    }
+  },
+  "include": ["src", "postcss.config.js"]
+}
