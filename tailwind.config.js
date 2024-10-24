@@ -16,7 +16,8 @@ export default {
         warning:"#ff003c",
         black:"#000000",
         white:"#fafafa",
-        gray:"#bbbbb",
+        gray: "#bbbbb",
+        secondaryBlack:"#00F0FF1A"
       }
     },
   },
