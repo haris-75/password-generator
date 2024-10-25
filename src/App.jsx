@@ -1,4 +1,4 @@
-import { PasswordGenerator, PasswordHistory } from '@components'
+import { Footer, PasswordGenerator, PasswordHistory } from '@components'
 import { MainHeading } from '@typography'
 
 
@@ -18,6 +18,8 @@ function App() {
           <PasswordHistory passwordList={passList} />
         </div>
       </div>
+
+      <Footer />
 
     </div>
   )

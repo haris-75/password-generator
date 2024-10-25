@@ -11,7 +11,7 @@ export const Input = ({
     // required = false,
     // error = '',
 }) =>
-    <div className="flex flex-col gap-1 relative border-secondary border-[1px]">
+    <div className="flex flex-col gap-1 relative border-secondary border-[1px] md:max-w-[550px]">
         <input
             type="text"
             id={id}
