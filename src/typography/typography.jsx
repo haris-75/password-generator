@@ -6,19 +6,19 @@ export const MainHeading = ({ children, className }) =>
     </h1>
 
 export const SubHeading = ({ children, className }) =>
-    <h3 className={cn('text-xl font-semibold font-tomorrow tracking-[8px]', className)}>
+    <h3 className={cn('md:text-xl text-base font-semibold font-tomorrow tracking-[8px]', className)}>
         {children}
     </h3>
 
 
 export const BaseFont = ({ children, className }) =>
-    <p className={cn("text-base font-normal font-tomorrow tracking-[8px]", className)} >
+    <p className={cn("lg:text-base text-xs font-normal font-tomorrow tracking-[8px]", className)} >
         {children}
     </p>
 
 
 export const Caption = ({ children, className }) =>
-    <p className={cn("text-xs font-normal font-barlow tracking-[2px]", className)}>
+    <p className={cn("lg:text-xs text-[10px] font-normal font-barlow tracking-[2px]", className)}>
         {children}
     </p>
 
