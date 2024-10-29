@@ -1,5 +1,6 @@
 import { CHECKBOX_LIST } from '@constants';
-import { ArrowIcon } from '@svg';
+import { ArrowIcon, CopyIcon } from '@svg';
+import { BaseFont, SubHeading } from '@typography';
 import { Button, Checkbox, Input, Slider } from '@ui';
 import { copyToClipboard, generatePass } from '@utils';
 import { useState } from 'react';
@@ -38,14 +39,25 @@ export function PasswordGenerator({ setPasswordList, passwordList }) {
         <div className='flex flex-col md:gap-10 gap-6 w-full xl:w-[120%]'>
             <div>
                 <Input className="mr-[72px] pr-0" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' clearHandler={clearPasswordHandler} />
-                <Button variant='primary' onClick={() => copyToClipboard(password)}> Copy Password_
-                    <div className='lg:block hidden'>
-                        <ArrowIcon color='black' size={24} />
+                <div className='flex items-center gap-6'>
+                    <Button variant='primary' onClick={setPasswordHandler}> Add Password_
+                        {/* <div className='lg:block hidden'>
+                            <ArrowIcon color='black' size={24} />
+                        </div>
+                        <div className='lg:hidden block'>
+                            <ArrowIcon color='black' size={18} />
+                        </div> */}
+                    </Button>
+                    <div className='cursor-pointer flex items-center' onClick={() => copyToClipboard(password)}>
+                        <div className='lg:block hidden'>
+                            <CopyIcon color='#f8ef00' size={36} />
+                        </div>
+                        <div className='lg:hidden block'>
+                            <CopyIcon color='#f8ef00' size={26} />
+                        </div>
+                        <SubHeading className='text-primary ml-2 font-normal'>Copy</SubHeading>
                     </div>
-                    <div className='lg:hidden block'>
-                        <ArrowIcon color='black' size={18} />
-                    </div>
-                </Button>
+                </div>
             </div>
             <div>
                 <Slider
@@ -53,7 +65,7 @@ export function PasswordGenerator({ setPasswordList, passwordList }) {
                     onChange={(e) => sliderValueHandler(e.target.value)}
                     id="password-slider"
                     name="password-slider"
-                    onBlur={setPasswordHandler}
+                // onBlur={setPasswordHandler}
                 />
             </div>
             <div className='grid lg:grid-cols-2 grid-cols-1 grid-row-2 xl:gap-8 gap-6'>
