@@ -35,7 +35,7 @@ export function PasswordGenerator({ setPasswordList, passwordList }) {
     const clearPasswordHandler = () => setPassword("");
 
     return (
-        <div className='flex flex-col md:gap-10 gap-6 lg:w-fit w-full'>
+        <div className='flex flex-col md:gap-10 gap-6 w-full xl:w-[120%]'>
             <div>
                 <Input className="mr-[72px] pr-0" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' clearHandler={clearPasswordHandler} />
                 <Button variant='primary' onClick={() => copyToClipboard(password)}> Copy Password_

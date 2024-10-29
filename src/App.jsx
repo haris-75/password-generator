@@ -12,7 +12,7 @@ function App() {
             <MainHeading className='text-primary'>PASSWORD</MainHeading>
             <MainHeading className='text-primary'>GENERATOR</MainHeading>
           </div>
-          <div className='flex md:flex-row flex-col lg:p-10 py-7 xl:gap-40 lg:gap-12 md:gap-8 gap-4 lg:w-fit w-full'>
+          <div className='flex md:flex-row flex-col lg:p-4 py-7 xl:gap-38 lg:gap-12 md:gap-8 gap-4 lg:w-fit w-full'>
             <PasswordGenerator passwordList={passwordList} setPasswordList={setPasswordList} />
             <PasswordHistory passwordList={passwordList} setPasswordList={setPasswordList} />
           </div>

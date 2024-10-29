@@ -7,11 +7,11 @@ export function PasswordHistory({ passwordList, setPasswordList }) {
     return (
         <>
             {!passwordList?.length ?
-                <div className='flex flex-col justify-center m-auto items-center'>
+                <div className='flex flex-col justify-center m-auto items-center md:w-[80%] w-[1/2]'>
                     <NoData />
                     <BaseFont className='text-primary'>No Passwords to Show</BaseFont>
                 </div> :
-                <div className='flex flex-col md:gap-6 gap-4 md:mt-0 mt-6 w-1/2'>
+                <div className='flex flex-col md:gap-6 gap-4 md:mt-0 mt-6 xl:w-[40%] md:w-[1/2] w-full'>
                     <div className='flex justify-between items-center'>
                         <SubHeading className="text-white"> PASSWORD HISTORY</SubHeading>
                         <div className='cursor-pointer flex items-center' title='clear history' onClick={() => setPasswordList([])}>
