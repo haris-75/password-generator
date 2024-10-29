@@ -23,7 +23,7 @@ export default defineConfig({
     port: 3000,
   },
 
-  base: "./password-generator/",
+  base: "/password-generator",
 
   build: {
     sourcemap: true,
