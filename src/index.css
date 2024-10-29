@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.Toastify__toast{
+    background-color: black !important;
+    border: 1px solid #f8ef00 !important;
+    font-family:"Tomorrow", sans-serif !important;
+    color:#00f0ff !important;
+}
+
+.Toastify__progress-bar {
+    background-color: #00f0ff !important;
+}
+
+.Toastify__progress-bar--bg{
+    background-color: #00f0ffde !important;
+}
+
+.Toastify__close-button{
+    color: #ff003c !important;
+}

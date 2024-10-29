@@ -7,6 +7,7 @@ export const Slider = ({
     onChange,
     name,
     className = '',
+    ...props
 }) => {
     return (
         <div className={className}>
@@ -30,6 +31,7 @@ export const Slider = ({
                 [&::-moz-range-thumb]:hover:bg-warning"
                 onChange={onChange}
                 value={value}
+                {...props}
             />
         </div>
     );
