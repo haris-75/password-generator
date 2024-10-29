@@ -23,6 +23,8 @@ export default defineConfig({
     port: 3000,
   },
 
+  base: "/haris-75/password-generator",
+
   build: {
     sourcemap: true,
   },
